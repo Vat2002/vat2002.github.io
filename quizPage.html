@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="shortcut icon" href="images/titleicon2.png" type="image/x-icon">
+	<meta charset="UTF-8">
+	<title>Quiz</title>
+	<link rel="stylesheet" type="text/css" href="css/quizPage.css">
+	<link rel="stylesheet" type="text/css" href="css/external.css">
+</head>
+<body>
+<div class="quizBody" id="quizBody">
+<div style="height:90px"></div>
+<!--Navigation bar-->
+    <div class="navbar">
+        <ul>
+            <li class="pageLogo"><img src="images/avanlogo.png" alt="pageLogo" style="margin-top:10px" width="200"></li>
+            <li class="mainPage"><a href="mainPage.html">Main</a></li>
+            <li class="tvPage"><a href="tvPage.html">Tv Series</a></li>
+            <li class="animePage"><a href="animePage.html">Anime Series</a></li>
+            <li class="productPage"><a href="productPage.html">Products</a></li>
+            <li class="quizPage"><a href="quizPage.html">Quiz</a></li>
+            <li class="galleryPage"><a href="galleryPage.html">Gallery</a></li>
+            <li class="feedbackPage"><a href="feedbackPage.html">Feedback</a></li>
+            <li class="aboutusPage"><a href="aboutUsPage.html">About Us</a></li>
+        </ul>
+    </div>
+<!--End Navigation Bar-->
+	
+<h1 id="mainQuizHeading">Test Your Knowledge...</h1>
+<p id="counter"></p>
+<div id ="quizInfoPanel">
+	<h2 id="quizPanelTitle">Try Our Quiz and See How Well You Know Our Shows!</h2><hr>
+	<h3 id="quizBoard"> 1 Minute.<br>
+	10 Questions. <br>
+	+2 Points for Every Correct Answer. <br>
+	-1 Point for Every Wrong Answer. <br>
+	Good Luck!</h3> <hr>
+	<p id="quizHint">Hint: Some of the answers can be found on other pages of our website!</p>
+	<a href="#quizHint"><button id="quizStartButton" onclick="startQuiz()">Start Quiz!</button></a><!--Anchor link-->
+</div>
+<div id="quizQuestionSection" class="quizQuestionSection">
+	<form name="Questions" id="Questions">
+	<div class="quizQuestion" id="QQ1">
+	<p id="quizQ">1. Which of these is the lifeforce in "Naruto"?</p>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q1"  value="w">Ki<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q1"  value="c">Chakra<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q1"  value="w">Chi<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q1"  value="w">None of the above<br>
+	</div>
+	</label>
+	</div>
+	<div class="quizQuestion" id="QQ2">
+	<p id="quizQ">2. In "Dragon Ball Z", what colour is Goku's hair as a Super Saiyan?</p>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q2"  value="c">Gold<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q2"  value="w">Red<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q2"  value="w">Blue<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q2"  value="w">Green<br>
+	</div>
+	</label>
+	</div>
+	<div class="quizQuestion" id="QQ3">
+	<p id="quizQ">3. What is the name of the main character in "Demon Slayer"?</p>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q3"  value="w">Kentaro<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q3"  value="w">Kageyama<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q3"  value="w">Itadori<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q3"  value="c">Tanjiro<br>
+	</div>
+	</label>
+	</div>
+	<div class="quizQuestion" id="QQ4">
+	<p id="quizQ">4. In "Peaky Blinders", which supposedly cursed gemstone was Grace wearing when she was killed?</p>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q4"  value="c">Sapphire<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q4"  value="w">Ruby<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q4"  value="w">Emerald<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q4"  value="w">Diamond<br>
+	</div>
+	</label>
+	</div>
+	<div class="quizQuestion" id="QQ5">
+	<p id="quizQ">5. In "The Falcon and The Winter Soldier", what is the Winter Soldier's real name?</p>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q5"  value="w">John Walker<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q5"  value="c">James Barnes<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q5"  value="w">Robert Maverick<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q5"  value="w">Sam Wilson<br>
+	</div>
+	</label>
+	</div>
+	<div class="quizQuestion" id="QQ6">
+	<p id="quizQ">6. Which network was "Money Heist" released by?</p>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q6"  value="w">Fox<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q6"  value="w">HBO<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q6"  value="c">Netflix<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q6"  value="w">Hulu<br>
+	</div>
+	</label>
+	</div>
+	<div class="quizQuestion" id="QQ7">
+	<p id="quizQ">7. Which actor plays the role of Loki?</p>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q7"  value="w">Tom Holland<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q7"  value="c">Tom Hiddleston<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q7"  value="w">Tom Felton<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q7"  value="w">Tom Hollander<br>
+	</div>
+	</label>
+	</div>
+	<div class="quizQuestion" id="QQ8">
+	<p id="quizQ">8. What is the name of the main character in "Jujutsu Kaisen"?</p>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q8"  value="w">Gojo<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q8"  value="w">Kageyama<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q8"  value="w">Tanjiro<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q8"  value="c">Itadori<br>
+	</div>
+	</label>
+	</div>
+	<div class="quizQuestion" id="QQ9">
+	<p id="quizQ">9. What does Naruto aspire to become?</p>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q9"  value="w">Humanity's Strongest Soldier<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q9"  value="w">Kira<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q9"  value="c">Hokage<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q9"  value="w">Pirate King<br>
+	</div>
+	</label>
+	</div>
+	<div class="quizQuestion" id="QQ10">
+	<p id="quizQ">10. What great animal can Sayains from "Dragon Ball" transform into?</p>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q10"  value="c">Apes<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q10"  value="w">Foxes<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q10"  value="w">Tigers<br>
+	</div>
+	</label>
+	<label>
+	<div class="quizAnswers">
+	<input type="radio" name="Q10"  value="w">Lions<br>
+	</div>
+	</label>
+	</div>
+	<div class="quizSubmit">
+	<input type="button" value="Submit!" id="submitButton" onclick="validate(this.form);">
+	</div>
+	</form>
+</div>
+<img class="hiddenQuizImage" src="images/result0.png" alt="Result Indicator Image" id="quizImage">
+<script src="javascript/quizPage.js"></script>
+</div>
+<!--Footer-->
+<div style="height:5px"></div>
+<footer class="footer" style="font-size:90%" id="footerId">
+	<!--Social part-->
+	<div id="socials" class="footHead line pageFooterSpace">
+		<h2>Socials</h2>
+		<p>
+			<a href="https://www.youtube.com/"><img src="images/youtube.png" alt="youtube" width="55" height="50" ></a>&nbsp;&nbsp;
+			<a href="https://www.facebook.com/"><img src="images/facebook.jpg" alt="facebook" width="55" height="50" ></a>
+		</p>
+		<p>   
+			<a href="https://www.twitter.com/"><img src= "images/twitter.png" alt="twitter" width="55" height="50"></a>&nbsp;&nbsp;
+			<a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram" width="55" height="50" ></a>
+		</p>
+		<div class="verticalline" id="vline"></div>
+	</div>
+	<!--End of Socials-->
+
+	<!--Pages part-->
+	<div class="footHead line pageFooterSpace">
+		<h2>Pages</h2>
+		<p>
+		<a href="mainPage.html">Main</a>&nbsp;
+		<a href="tvPage.html" style="padding-left: 25px;">Tv Page</a>&nbsp;
+		</p>
+		<p>
+		<a href="animePage.html">Anime</a>&nbsp;
+		<a href="productPage.html" style="padding-left: 15px;">Product</a>&nbsp;
+		</p>
+		<p>
+		<a href="quizPage.html">Quiz</a>&nbsp;
+		<a href="galleryPage.html" style="padding-left: 28px;">Gallery</a>&nbsp;
+		</p>
+		<a href="feedbackPage.html">Feedback</a>&nbsp;
+		<a href="aboutusPage.html">About us</a>
+	</div>
+	<!--End of Pages-->
+	
+	<!--Sitemap and Page editor buttons-->
+	<div class="footHead line pageFooterSpace">
+		<h2>Other</h2>
+			<form action="sitemapPage.html"><p><button class="sitemapButton">Sitemap</button></p></form>
+			<form action="student3.html"><p><button class="pageEditorButton">Page Editor</button></p></form>
+	</div>
+	<!--End of sitemap and page editor-->
+
+	<!--Page logo-->
+	<div class="logoFooter pageFooterSpace">
+		<img src="images/logo.png" alt="Page logo" width="650" height="290">
+	</div>
+	<!--End of page logo-->
+	
+	<!--Top button-->
+	<button onclick="topFunction()" id="topButton" class="topButton" title="Get back to the top"><img src="images/toparrow.jpg" alt="Top Arrow" width="25" height="25">Top</button>
+	<!--End of top button-->
+
+<script  src="javascript/external.js"></script>
+</footer>
+<!--End of footer-->
+</body>
+   
+
+</html>

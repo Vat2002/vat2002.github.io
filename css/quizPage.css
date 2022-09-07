@@ -1,0 +1,178 @@
+html {
+	scroll-behavior:smooth;
+}
+@keyframes emptyFlash { /* Flashes question box in red, then fades back. Signals a skipped question */
+	0% {border-color:red;}
+	50% {border-color:red;}
+	100% {border-color:white;}
+}
+@keyframes quizHover { /* Result image in lower left hovers slightly */
+	0% {bottom:0px;}
+	50% {bottom:-2.5px;}
+	100% {bottom: 0px;}
+}
+.quizBody {
+	background-color:black;
+	color:white;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.quizBodyRed { /* background change depending on result */
+	background-color:rgb(200, 2, 2);
+}
+
+.quizBodyBlue { /* background change depending on result */
+	background-color:SteelBlue;
+}
+
+.quizBodyGreen { /* background change depending on result */
+	background-color:GreenYellow;
+}
+
+#mainQuizHeading {
+	text-align:center;
+	color:coral;
+	text-shadow: 1.2px 1.2px gray;
+}
+
+#quizInfoPanel {
+	border: 2px solid white;
+	border-radius: 20px;
+	background-color: teal;
+	transition: 0.2s;
+	text-align:center;
+	margin: auto;
+	width: 630px;
+}
+
+#quizPanelTitle {
+	text-shadow: 2px 2px black;
+}
+
+#quizHint {
+	color:black;
+	font-size:11px;
+}
+
+#quizStartButton {
+	background-color: coral;
+	color:white;
+	font-size: 110%;
+	border: 2px solid teal;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+	padding: 8px 18px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.quizQuestionSection { /* questions are initially hidden; appear on pressing start quiz button */
+	display:none;
+}
+
+.quizQuestionSectionActive { /* questions are initially hidden; appear on pressing start quiz button */
+	display:block;
+}
+
+.quizQuestion {
+	border: 2px solid white;
+	border-radius: 20px;
+	background-color: teal;
+	height:280px;
+	transition: 0.2s
+	color:white;
+	text-align:center;
+	margin: auto;
+	margin-top:25px;
+	width: 630px;
+}
+
+.quizQuestionEmpty { /* skipped question indicator */
+	animation-name:emptyFlash;
+	animation-duration:7s;
+	animation-iteration-count: 1;
+}
+
+.quizSubmit {
+	border: 2px solid white;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+	background-color: teal;
+	padding:5px;
+	transition: 0.2s
+	color:white;
+	text-align:center;
+	height:40px;
+	margin: auto;
+	margin-top:10px;
+	width: 580px;
+}
+
+#quizQ {
+	font-size: 20px;
+}
+
+.quizCorrect { /* green question box */
+	border-color: lime;
+	background-color: green;
+}
+.quizWrong { /* red question box */
+	border-color: red;
+	background-color: maroon;
+}
+.quizAnswers { /* radio buttons */
+	background-color: steelblue;
+	color:white;
+	font-size: 110%;
+	border-color:transparent
+	border-top: 2px solid midnightblue;
+	border-left: 2px solid midnightblue;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+	padding: 8px 18px;
+	margin-left:50px;
+	margin-top:5px;
+	width: 78%;
+	text-align: left;
+	text-decoration: none;
+	display: block;
+}
+#submitButton {
+	background-color: coral;
+	color:white;
+	font-size:105%;
+	border: 2px solid teal;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+	padding: 8px 18px;
+	width: 100px;
+}
+#counter{
+	position:fixed;
+	left:75%;
+	border: 2px solid white;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+	background-color: coral;
+	font-size:200%;
+	padding:5px;
+	margin-right:150px;
+	color:white;
+}
+
+.hiddenQuizImage {
+	display:none;
+}
+
+.quizImage { /* result-based image */
+	display:block;
+	position:sticky;
+	bottom:0px;
+	height:255px;
+	float:left;
+	left:0px;
+	animation-name:quizHover;
+	animation-duration:1.2s;
+	animation-iteration-count: infinite;
+}

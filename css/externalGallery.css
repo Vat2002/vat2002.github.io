@@ -1,0 +1,650 @@
+body {
+    margin: 0;
+    background-color:teal;
+    width: 100%;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navbar ul li a:hover{
+    background-color:teal;
+}
+.navbar ul {
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  overflow:hidden;
+  background-color:coral;
+  position: fixed;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  z-index: 5;
+
+}
+.navbar ul li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 18px 14px;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom:50px;
+}
+a{
+    text-decoration:none;
+}
+
+.pageLogo{
+    margin-left:-25px;
+    padding-right: 150px;
+    align-self: normal;
+}
+
+footer{
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    background:white;
+    clear:both;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.footHead{
+    float:left;
+}
+.line{
+    border-right:2px solid black;
+    height: 270px;
+    padding-right: 40px;
+}
+.pageFooterSpace{
+    padding-left: 60px;
+}
+#socials{
+    padding-left:25px;
+}
+.sitemapButton{
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+    border-radius:4px;
+}
+.sitemapButton:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+.pageEditorButton{
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+    border-radius:4px;
+}
+.pageEditorButton:hover{
+    background-color:#4CAF50;
+}
+.topButton{
+   display:none;
+   position:fixed;
+   bottom:20px;
+   right:30px;
+   cursor: pointer;
+   font-size:20px;
+   border:none;
+   outline:none;
+   background-color:white;
+   color: black;
+   padding:20px 30px;
+   border-radius:5px;
+   margin-bottom: 90px
+}
+
+
+
+
+
+
+
+
+#contentDiv {
+	
+	margin-top: 100px;
+	margin-left: 85px;
+	margin-right: 85px;
+	font-size:80%;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-align: center;
+	
+	
+}
+
+.mainHeader {
+	
+	font-size: 75px;
+	
+	
+}
+
+
+
+.dropbtn {
+  background-color: coral;
+  color: white;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  font-size:80%;
+}
+
+.dropbtn2 {
+  background-color: coral;
+  color: white;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  font-size:80%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  cursor: pointer;
+  font-size:80%;
+}
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  cursor: pointer;
+  font-size:80%;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+} 
+
+.dropdown-content2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.dropdown-content2 a:hover {background-color: #f1f1f1}
+
+.dropdown2:hover .dropdown-content2 {
+  display: block;
+}
+
+.dropdown2:hover .dropbtn2 {
+  background-color: #3e8e41;
+}
+
+
+
+#backgroundMenu {
+	
+	
+	
+}
+
+#galleryFrame {
+	
+	width: 1000px;
+	height: 1200px;
+	border: none;
+	
+}
+
+
+
+
+#picsDiv {
+	
+	overflow-x: hidden;
+	overflow-y: hidden;
+	
+}
+
+
+tr {
+	
+	text-align: center;
+	
+}
+
+td {
+	
+	text-align: center;
+	padding: 20px;
+	
+}
+
+.iframeBody{
+	
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 125%;
+	
+}
+
+
+.imageCell {
+	
+	transition: transform .2s;
+	padding-left: 100px;
+	padding-right: 100px;
+	
+}
+
+.imageCell:hover {
+	
+	-ms-transform: scale(1.10); /* IE 9 */
+	-webkit-transform: scale(1.10); /* Safari 3-8 */
+	transform: scale(1.10); 
+	
+}
+
+.imagePoster {
+	
+	max-width:350px;
+    max-height:350px;
+	
+	
+}
+
+#backgroundMenuDiv {
+	
+	float: right;
+	font-size: 15px;
+	
+}
+
+.viewMoreButton {
+	
+	background-color: coral;
+	color: white;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	
+}
+
+.viewMoreButton:hover {
+	
+	background-color: #3e8e41;
+	
+}
+
+#overlay1 {
+	
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 3;
+  color: white;
+  
+}
+
+#overlay2 {
+	
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 3;
+  color: white;
+  
+}
+
+#overlay3 {
+	
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 3;
+  color: white;
+  
+}
+
+#overlay4 {
+	
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 3;
+  color: white;
+  
+}
+
+#overlay5 {
+	
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 3;
+  color: white;
+  
+}
+
+#overlay6 {
+	
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 3;
+  color: white;
+  
+}
+
+#overlay7 {
+	
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 3;
+  color: white;
+  
+}
+
+#overlay8 {
+	
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 3;
+  color: white;
+  
+}
+
+
+.closeButton {
+	
+	color: red;
+	float: right;
+	padding-right: 30px;
+	padding-top: 00px;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	
+}
+
+.closeButton:hover {
+	
+	cursor: pointer;
+	color: #8B0000;
+	
+}
+
+.imagePosterOverlay {
+	
+	max-width:500px;
+    max-height:500px;
+	float: left;
+	padding: 50px;
+	
+}
+
+.overlayTitle {
+	
+	padding-top: 60px;
+	padding-right: 50px;
+	
+}
+
+.descPara {
+	
+	padding-right: 50px;
+	
+}
+
+.price {
+	
+	padding-right: 50px;
+	font-size:125%;
+	
+	
+}
+
+.buyButton {
+	
+	margin-right: 50px;
+	background-color: red;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	
+}
+
+.buyButton:hover {
+	
+	background-color: #8B0000;
+
+}
+#navbar2 {
+	
+	height: 30px;
+	font-size:120%;
+	
+}
+
+#navbar2Button1 {
+	
+	width: 50%;
+	float: left;
+	border-bottom:solid;
+	border-top: solid;
+	border-left: solid;
+	border-right: solid;
+	border-color: black;
+	text-decoration: none;
+	cursor: pointer;
+	background-color: #333;
+	color: white;
+	font-size: 90%;
+	padding: 5px;
+	transition-duration: 0.4s;
+
+}
+
+#navbar2Button1:hover {
+	
+	background-color: black;
+	
+}
+
+#navbar2Button1:focus {
+	
+	background-color: black;
+	
+}
+
+#navbar2Button1:active {
+	
+	background-color: black;
+	
+}
+
+#navbar2Button1:visited {
+	
+	background-color: black;
+	
+}
+
+#navbar2Button2 {
+	
+	width: 50%;
+	float: right;
+	border-bottom: solid;
+	border-top: solid;
+	border-right: solid;
+	border-left: solid;
+	border-color: black;
+	text-decoration: none;
+	cursor: pointer;
+	background-color: #333;
+	color: white;
+	font-size: 90%;
+	padding: 5px;
+	transition-duration: 0.4s;
+
+}
+
+#navbar2Button2:hover {
+	
+	background-color: black;
+	
+}
+
+#navbar2Button2:focus {
+	
+	background-color: black;
+	
+}
+
+#navbar2Button2:active {
+	
+	background-color: black;
+	
+}
+
+#navbar2Button2:visited {
+	
+	background-color: black;
+	
+}
+
+.navbar2Link {
+	
+	color: white;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#contentDivS {
+	
+	margin-top: 100px;
+	height: 100%;
+	width: 100%;
+	
+}
+
+#svgSitemap {
+	
+	
+	
+}
+

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	<title>AVAN</title>
+		<meta charset="UTF-8">
+		<!--link this css file in homepage-->
+		<link rel="shortcut icon" href="images/titleicon2.png" type="image/x-icon">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/productPage.css">
+		<link rel="stylesheet" type="text/css" href="css/external.css">		
+	</head>
+	<body>
+
+		<!--Navigation bar-->
+	    <div class="navbar">
+	        <ul>
+	            <li class="pageLogo"><img src="images/avanlogo.png" alt="pageLogo" width="200" style="margin-top: 10px;"></li>
+	            <li class="mainPage"><a href="mainPage.html">Main</a></li>
+	            <li class="tvPage"><a href="tvPage.html">Tv Series</a></li>
+	            <li class="animePage"><a href="animePage.html">Anime Series</a></li>
+	            <li class="productPage"><a href="productPage.html">Products</a></li>
+	            <li class="quizPage"><a href="quizPage.html">Quiz</a></li>
+	            <li class="galleryPage"><a href="galleryPage.html">Gallery</a></li>
+	            <li class="feedbackPage"><a href="feedbackPage.html">Feedback</a></li>
+	            <li class="aboutusPage"><a href="aboutUsPage.html">About Us</a></li>
+	        </ul>
+	    </div>
+	    <!--End Navigation Bar-->
+
+	    <!--page content-->
+	    <!--Product form-->
+		<form name="buyerDetails" method="get" style="display: block;float: right;">
+		<fieldset class="fieldsetstyle" style="color: white;">
+			<fieldset id="namefield"><legend>Name</legend>
+
+			  <label for="fname">First name:</label><br>
+			  <input type="text" id="fname" name="fname"><br>
+
+			  <label for="lname">Last name:</label><br>
+			  <input type="text" id="lname" name="lname">
+
+			</fieldset>
+		  	<fieldset id="addressfield"><legend>Delivery Address</legend>
+
+			  <label for="addressl1">Line1:</label><br>
+			  <input type="text" id="addressl1" name="addressl1"><br>
+
+			  <label for="addressl2">Line2:</label><br>
+			  <input type="text" id="addressl2" name="addressl2"><br>
+
+			  <label for="addressl3">Line2:</label><br>
+			  <input type="text" id="addressl3" name="addressl3"><br>
+
+		  	</fieldset><br>
+
+		  <label for="phoneno">Contact Number:</label><br>
+		  <input type="number" id="phoneno" name="phoneno" ><br><br>
+
+		  <label for="Email">Emal Address:</label><br>
+		  <input type="text" id="email" name="email"><br><br>
+
+		  <label for="deliverymessage">Delivery Note:</label><br>
+		  <textarea name="deliverymessage" style="width: 200px;height: 100px;"></textarea>
+		</fieldset>
+		</form>
+		<!--End form-->
+		<!--Display all product-->
+		<div id="main">
+			<h1 style="color: white;">Select Your Product</h1>
+			<div id="showProduct"></div>
+		</div><br>
+		<!--End-->
+
+		<!--cart-->
+		<button id="displaythecart" class="cartbtn" onclick="printcart()">
+			<img src="images/shopping-cart-icon.png" width="50px" alt="shopping-cart-icon">
+		</button>
+
+		<div id="overlay">
+			<button id="closebtn" class="btn" onclick="off()" style="float:right;font-size:30px;">X</button></td>
+			<table class="carttable"><tr><td>
+				<table id="incartitem"></table></td>
+			</tr>
+			<tr>
+				<td id="price" class="totalprice"></td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">
+					<button id="placeorderbtn" class="btn" onclick="formforInvoice(buyerDetails)">Place Order</button>
+					<button id="resetbtn" class="btn" onclick="resetthecart()">reset</button>
+				</td>
+			</tr>
+			</table><br>
+		</div>
+		<!--End cart-->
+
+		<!--invoice-->
+		<div class="overlayforinvoice">
+			<h1>Invoice Details</h1>
+			<table border="1px" id="invoicetable" class="invoicetable">
+			</table>
+			<div class="invoicedetails">
+				<h6>Name</h6>
+				<span id="firstname"></span>
+				<span id="lastname"></span>
+			</div>
+			<div class="invoicedetails">
+				<h6>Delivery Address</h6>
+				<span id="addressl1span"></span>,<br>
+				<span id="addressl2span"></span>,<br>
+				<span id="addressl3span"></span>.
+			</div>
+			<div class="invoicedetails">
+				<h6>Contect Details</h6>
+				<span id="phonenumber"></span><br>
+				<span id="Emali"></span>
+			</div>
+			<div class="invoicedetails">
+				<h6>Delivery note</h6>
+				<span id="diliverynote"></span>
+			</div>
+			<br><br>
+			<a href="productPage.html">
+				<button class="btn" id="displaythecart">Go back to Product Page</button>
+			</a>
+			
+		</div>
+		<!--end invoice-->
+		<!--End page content-->
+
+		<!--Footer-->
+    <div style="height:1000px"></div>
+    <footer class="footer" id="footerId">
+        <!--Social part-->
+        <div id="socials" class="footHead line pageFooterSpace">
+            <h2>Socials</h2>
+            <p>
+                <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="youtube" width="55" height="50" ></a>&nbsp;&nbsp;
+                <a href="https://www.facebook.com/"><img src="images/facebook.jpg" alt="facebook" width="55" height="50" ></a>
+            </p>
+            <p>   
+                <a href="https://www.twitter.com/"><img src= "images/twitter.png" alt="twitter" width="55" height="50"></a>&nbsp;&nbsp;
+                <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram" width="55" height="50" ></a>
+            </p>
+            <div class="verticalline" id="vline"></div>
+        </div>
+        <!--End of Socials-->
+
+        <!--Pages part-->
+        <div class="footHead line pageFooterSpace">
+            <h2>Pages</h2>
+            <p>
+            <a href="mainPage.html">Main</a>&nbsp;
+            <a href="tvPage.html" style="padding-left: 25px;">Tv Page</a>&nbsp;
+            </p>
+            <p>
+            <a href="animePage.html">Anime</a>&nbsp;
+            <a href="productPage.html" style="padding-left: 15px;">Product</a>&nbsp;
+            </p>
+            <p>
+            <a href="quizPage.html">Quiz</a>&nbsp;
+            <a href="galleryPage.html" style="padding-left: 28px;">Gallery</a>&nbsp;
+            </p>
+            <a href="feedbackPage.html">Feedback</a>&nbsp;
+            <a href="aboutusPage.html">About us</a>
+        </div>
+        <!--End of Pages-->
+        
+        <!--Sitemap and Page editor buttons-->
+        <div class="footHead line pageFooterSpace">
+            <h2>Other</h2>
+                <form action="sitemapPage.html"><p><button class="sitemapButton">Sitemap</button></p></form>
+                <form action="student1.html"><p><button class="pageEditorButton">Page Editor</button></p></form>
+        </div>
+        <!--End of sitemap and page editor-->
+
+        <!--Page logo-->
+        <div class="logoFooter pageFooterSpace">
+            <img src="images/logo.png" alt="Page logo" width="650" height="290">
+        </div>
+        <!--End of page logo-->
+        
+        <!--Top button-->
+        <button onclick="topFunction()" id="topButton" class="topButton" title="Get back to the top"><img src="images/toparrow.jpg" alt="Top Arrow" width="25" height="25">Top</button>
+        <!--End of top button-->
+    
+    <script  src="javascript/external.js"></script>
+    </footer>
+    <!--End of footer-->
+		
+		<script src="javascript/productPage.js"></script>
+	</body>
+</html>

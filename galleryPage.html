@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!--Title icon-->
+        <link rel="shortcut icon" href="images/titleicon2.png" type="image/x-icon">
+        <!--External css file-->
+        <link rel="stylesheet" type="text/css" href="css/externalGallery.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>AVAN</title>
+    </head>
+
+    <body>
+    <!--Navigation bar-->
+    <div class="navbar">
+        <ul>
+            <li class="pageLogo"><img src="images/avanlogo.png" alt="pageLogo" width="200" style="margin-top:10px;"></li>
+            <li class="mainPage"><a href="mainPage.html">Main</a></li>
+            <li class="tvPage"><a href="tvPage.html">Tv Series</a></li>
+            <li class="animePage"><a href="animePage.html">Anime Series</a></li>
+            <li class="productPage"><a href="productPage.html">Products</a></li>
+            <li class="quizPage"><a href="quizPage.html">Quiz</a></li>
+            <li class="galleryPage"><a href="galleryPage.html">Gallery</a></li>
+            <li class="feedbackPage"><a href="feedbackPage.html">Feedback</a></li>
+            <li class="aboutusPage"><a href="aboutUsPage.html">About Us</a></li>
+        </ul>
+    </div>
+    <!--End Navigation Bar-->
+	
+	
+
+	<!--START OF GALLERY PAGE SECTION-->
+	
+	
+	
+	<!--main content division-->
+	<div id = "contentDiv">
+		
+		
+		
+		<!--drop down menu>
+		<span id = "themeMenu" ></span-->
+		<div id = "backgroundMenuDiv">
+		
+		<div class="dropdown">
+			<button class="dropbtn">Background color</button>
+			<div class="dropdown-content">
+				<a onclick = "darkMode()" >Dark Mode</a>
+				<a onclick = "lightMode()" >Light Mode</a>
+				<a onclick = "kawaiiUwu()" >Kawaii Mode</a>
+				<a onclick = "oceanBlue()" >Ocean Blue</a>
+				<a onclick = "royalPurple()" >Royal Purple</a>
+				<a onclick = "sunnyYellow()" >Sunny Yellow</a>
+			</div>
+		</div>
+		<div class="dropdown2">
+			<button class="dropbtn2">Font color</button>
+			<div class="dropdown-content2">
+				<a id="changeDark" >Light Text</a>
+				<a id="changeLight" >Dark Text</a>
+				<a id="changeKawaii" >Kawaii Text</a>
+				<a id="changeOcean" >Foam text</a>
+				<a id="changeRoyal" >Royal Text</a>
+				<a id="changeSunny" >Purple Text</a>
+			</div>
+		</div>
+		
+		
+		
+		
+		</div>
+		<br>
+		
+		<!--maincontent-->
+		<h1 class = "mainHeader output" >Gallery</h1>
+		
+		
+		
+		<p class = "introPara output" >Feel free to browse through our vast collection of Movies, Series and Anime.</p>
+		<p class = "introPara output" >Use the drop down menu on the left to choose your theme or make your custom one!</p>
+		
+		<br>
+		
+		<div id = "navbar2" >
+		
+			<a class = "navbar2Link" href="seriesGallery.html" target="iframe_1" ><button id = "navbar2Button1" selected>Tv Series</button></a>
+			<a class = "navbar2Link" href="animeGallery.html" target="iframe_1" ><button id = "navbar2Button2" >Anime</button ></a>
+		
+		</div>
+		
+		
+		<!--iframe for the gallery thumbnails-->
+		
+		<iframe name = "iframe_1" id = "galleryFrame" src = "seriesGallery.html"></iframe>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+    <!--Footer-->
+    <div style="height:0px"></div>
+    <footer class="footer" id="footerId">
+        <!--Social part-->
+        <div id="socials" class="footHead line pageFooterSpace">
+            <h2>Socials</h2>
+            <p>
+                <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="youtube" width="55" height="50" ></a>&nbsp;&nbsp;
+                <a href="https://www.facebook.com/"><img src="images/facebook.jpg" alt="facebook" width="55" height="50" ></a>
+            </p>
+            <p>   
+                <a href="https://www.twitter.com/"><img src= "images/twitter.png" alt="twitter" width="55" height="50"></a>&nbsp;&nbsp;
+                <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram" width="55" height="50" ></a>
+            </p>
+            <div class="verticalline" id="vline"></div>
+        </div>
+        <!--End of Socials-->
+
+        <!--Pages part-->
+        <div class="footHead line pageFooterSpace">
+            <h2>Pages</h2>
+            <p>
+            <a href="mainPage.html">Main</a>&nbsp;
+            <a href="tvPage.html" style="padding-left: 25px;">Tv Page</a>&nbsp;
+            </p>
+            <p>
+            <a href="animePage.html">Anime</a>&nbsp;
+            <a href="productPage.html" style="padding-left: 15px;">Product</a>&nbsp;
+            </p>
+            <p>
+            <a href="quizPage.html">Quiz</a>&nbsp;
+            <a href="galleryPage.html" style="padding-left: 28px;">Gallery</a>&nbsp;
+            </p>
+            <a href="feedbackPage.html">Feedback</a>&nbsp;
+            <a href="aboutusPage.html">About us</a>
+        </div>
+        <!--End of Pages-->
+        
+        <!--Sitemap and Page editor buttons-->
+        <div class="footHead line pageFooterSpace">
+            <h2>Other</h2>
+                <form action="sitemapPage.html"><p><button class="sitemapButton">Sitemap</button></p></form>
+                <form action="student4.html"><p><button class="pageEditorButton">Page Editor</button></p></form>
+        </div>
+        <!--End of sitemap and page editor-->
+
+        <!--Page logo-->
+        <div class="logoFooter pageFooterSpace">
+            <img src="images/logo.png" alt="Page logo" width="650" height="290">
+        </div>
+        <!--End of page logo-->
+        
+        <!--Top button-->
+        <button onclick="topFunction()" id="topButton" class="topButton" title="Get back to the top"><img src="images/toparrow.jpg" alt="Top Arrow" width="25" height="25">Top</button>
+        <!--End of top button-->
+    
+    <script  src="javascript/external.js"></script>
+    </footer>
+    <!--End of footer-->
+	<script  src="javascript/externalGallery.js"></script>
+
+    </body>
+</html>
